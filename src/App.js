@@ -1,10 +1,12 @@
 import './App.css';
-
+import Routers from './Routers/Routers';
+import Home from './pages/Home';
 function App() {
   return (
-    <div className="App">
-      yo ma nigga!
-    </div>
+    <main className="App">
+      <Routers />
+      {/* <Home /> */}
+    </main>
   );
 }
 
