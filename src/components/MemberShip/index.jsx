@@ -29,16 +29,16 @@ const MemberShipPlan = (props) => {
             </Typography>
             <div className="list">
               <li className="li">
-                <img src={Tick} className="list-icon" alt="done" /> number of
-                gyms - 104 Gyms
+                <img src={Tick} className="list-icon" alt="done" /> Under
+                Planning
               </li>
               <li className="li">
-                <img src={Tick} className="list-icon" alt="done" /> check-ins-
-                20 visits a Month
+                <img src={Tick} className="list-icon" alt="done" /> Under
+                Planning
               </li>
               <li className="li">
-                <img src={Tick} className="list-icon" alt="done" /> price- rs
-                3900.00/ month
+                <img src={Tick} className="list-icon" alt="done" /> Under
+                Planning
               </li>
             </div>
             <Typography

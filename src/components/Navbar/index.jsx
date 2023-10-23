@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate, useNavigation } from "react-router-dom";
 import "./navbar.css";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
@@ -13,31 +13,25 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { Button } from "@mui/material";
 import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
-import Avatar from "@mui/material/Avatar";
-import Tooltip from "@mui/material/Tooltip";
-import AdbIcon from "@mui/icons-material/Adb";
 import IconButton from "@mui/material/IconButton";
+
+
 
 const pages = ["Home", "Fitness Partner", "Corporate Partner", "Contact US"];
 const links = ["/", "/fitnesspartner", "/corporatepartner", "/contactus"];
 const NavBar = () => {
+  const navigate = useNavigate();
   const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
-  };
-  const handleOpenUserMenu = (event) => {
-    setAnchorElUser(event.currentTarget);
   };
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
 
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
-  };
+ 
   return (
     <div className="navbar">
       <div className="social">
@@ -118,7 +112,9 @@ const NavBar = () => {
             </Box>
 
             <Box sx={{ flexGrow: 0 }}>
-              <Button className="nav-btn"> Partner Login </Button>
+              <Button className="nav-btn" onClick={()=>{
+                navigate('/login')
+              }}> Partner Login </Button>
             </Box>
           </Toolbar>
         </Container>

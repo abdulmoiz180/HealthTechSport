@@ -18,6 +18,19 @@ import Pro from "../assets/images/Pro.png";
 import Dumble from '../assets/logos/dumble.png'
 import Stocks from '../assets/logos/stoks.jpeg'
 import Health from '../assets/logos/health.jpeg'
+import { Typography } from "@mui/material";
+
+
+
+export const HeroHeader = (props) => {
+    return (<>
+        <div className={`page-hero  ${props.class}`}>
+            <Typography variant="h4" className={`page-hero-title ${props.pageTitleClass}`}>
+                {props.pageTitle}
+            </Typography>
+        </div>
+    </>)
+}
 
 export const CarouselImages = [
     {
@@ -123,7 +136,7 @@ export const HelpCard = [
     {
         id: 1,
         img: Dumble,
-        content1: "UNLIMITED ACCESS TO OVER 266+ TRAINERS AND ",
+        content1: "UNLIMITED ACCESS TO TRAINERS AND ",
         span: 'FITNESS CENTERS',
         content2: "ACCROSSS PAKISTAN"
     },

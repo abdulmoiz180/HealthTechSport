@@ -46,9 +46,8 @@ const FitnessPartner = (props) => {
       alt: "Perks Tags",
       title: "NEW CUSTOMERS",
       subtitle1: "We target people outside of your",
-      span: "target area ",
-      subtitle2:
-        "and bring in more users to your Gym that otherwise would not visit."
+      span: "your office ",
+      subtitle2: "and bring in more fitness trainers to your workplace ."
     },
     {
       id: 2,
@@ -212,21 +211,21 @@ const FitnessPartner = (props) => {
               placeholder="Pakistan"
             />
             {/* <FormControl className="select-field"> */}
-              {/* <InputLabel id="demo-simple-select-label">Age</InputLabel> */}
-              <Select
-                labelId="demo-simple-select-label"
-                id="demo-simple-select"
-                value={age}
-                label="Age"
-                placeholder="State"
-                onChange={handleChange}
-                className="registration-fields"
-              >
-                <MenuItem value={10}>PUNJAB</MenuItem>
-                <MenuItem value={20}>SINDH</MenuItem>
-                <MenuItem value={30}>BLOCHISTAN</MenuItem>
-                <MenuItem value={30}>KHAIBER PAKHTUNKHWA</MenuItem>
-              </Select>
+            {/* <InputLabel id="demo-simple-select-label">Age</InputLabel> */}
+            <Select
+              labelId="demo-simple-select-label"
+              id="demo-simple-select"
+              value={age}
+              label="Age"
+              placeholder="State"
+              onChange={handleChange}
+              className="registration-fields"
+            >
+              <MenuItem value={10}>PUNJAB</MenuItem>
+              <MenuItem value={20}>SINDH</MenuItem>
+              <MenuItem value={30}>BLOCHISTAN</MenuItem>
+              <MenuItem value={30}>KHAIBER PAKHTUNKHWA</MenuItem>
+            </Select>
             {/* </FormControl> */}
             <TextField
               id=""

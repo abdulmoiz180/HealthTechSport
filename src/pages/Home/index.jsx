@@ -1,14 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
-import NavBar from "../../components/Navbar";
 import "./home.css";
 import HeadingContainer from "../../components/HeadingContainer/index";
 import { CarouselImages } from "../../components/ImgData";
 import { PaymentImgs } from "../../components/ImgData";
 import MemberShipPlan from "../../components/MemberShip";
-import Carousel, { DisabledCard } from "../../layout/carousel";
+import Carousel from "../../layout/carousel";
 import DetailsCard from "../../components/AppWorking";
-import Footer from "../../layout/Footer";
 import Trainer from "../../assets/images/trainer.png";
 import { Button, Typography } from "@mui/material";
 import { useNavigate } from "react-router-dom";
@@ -21,14 +19,11 @@ const Home = (props) => {
       <section className="hero">
         <div className="hero-left-container">
           <h1 className="hero-content-heading">
-            ONE MEMBERSHIP AND ACCESS <span>Fitness centers</span> ACROSS
+            ONE MEMBERSHIP AND ACCESS <span>Fitness trainers</span> ACROSS
             PAKISTAN
           </h1>
-          <p>Pakistan's Fitness network Network.</p>
-          <p>
-            Access to the best Fitness across lahore, karachi, islamabad and 11
-            other cities.
-          </p>
+          <p>Pakistan's First Fitness Network.</p>
+          <p>It will access to the best Fitness trainers accross pakistan.</p>
         </div>
         <div className="hero-right-container">
           <div className="images">

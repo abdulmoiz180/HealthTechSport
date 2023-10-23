@@ -5,20 +5,21 @@ const DetailsCard = () => {
   const Details = [
     {
       label: "01",
-      message1: "FIRST DOWNLOAD OUR APP AND SIGN UP TO GET STARTED!",
-      message2: "YOUR GYM PASSPORT LIVES HERE!"
+      message1: " Membership and User Engagement",
+      message2:
+        "Our sports and fitness ecosystem begins with user engagement through membership."
     },
     {
       label: "02",
-      message1: "PURCHASE OUR MEMBERSHIP PASS FROM THE APP",
+      message1: "Personalized Fitness Plans and Coaching",
       message2:
-        "OUR PASS IS A MONTHLY SUBSCRIPTION PASS. YOU CAN CANCEL AT ANYTIME!"
+        "Our ecosystem stands out by offering personalized fitness plans tailored to each member's goals and abilities."
     },
     {
       label: "03",
-      message1: "VISIT ANY FITNESS CENTRE!",
+      message1: "Integration with Corporate Wellness",
       message2:
-        "WE HAVE PARTNERED WITH CENTERS ACROSS PAKISTAN, SO THE LAST THING THAT WILL COME BETWEEN YOU AND YOUR FITNESS GOALS,WILL BE AN EXCUSE!"
+        "To address the challenges faced by the ICTN industry and other sectors with sedentary jobs, our ecosystem extends its benefits to the corporate world."
     }
   ];
   return (
@@ -26,9 +27,7 @@ const DetailsCard = () => {
       {Details.map((detail) => (
         <Card className="details-card" sx={{ display: "flex" }}>
           <CardContent className="card-flex" sx={{ display: "flex" }}>
-            <Typography className="num">
-              {detail.label}
-            </Typography>
+            <Typography className="num">{detail.label}</Typography>
             <div className="detail-divider"></div>
             <div className="message-container">
               <Typography className="details-typography clr-red">

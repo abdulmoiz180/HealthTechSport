@@ -1,6 +1,7 @@
 import React from "react";
 import "./footer.css";
 import { Typography } from "@mui/material";
+import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <section>
@@ -8,11 +9,31 @@ const Footer = () => {
         <div className="logo">Health Tech Sport</div>
         <div className="footer-pages">
           <ul className="footer-links">
-            <li>ABOUT US</li>
-            <li>FAQS</li>
-            <li>TERMS & CONDITIONS</li>
-            <li>REFUND POLICY</li>
-            <li>PRIVACY POLICY</li>
+            <li>
+              <Link to="aboutus" className="links">
+                ABOUT US{" "}
+              </Link>
+            </li>
+            <li>
+              <Link to="faqs" className="links">
+                FAQS
+              </Link>
+            </li>
+            <li>
+              <Link to="terms" className="links">
+                TERMS & CONDITIONS
+              </Link>
+            </li>
+            <li>
+              <Link to="/refund" className="links">
+                REFUND POLICY
+              </Link>
+            </li>
+            <li>
+              <Link to="/privacy" className="links">
+                Privacy Policy
+              </Link>
+            </li>
           </ul>
           <div className="footer-divider"></div>
         </div>
